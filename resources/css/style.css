@@ -1,0 +1,161 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: font-family: 'Roboto', Arial, sans-serif;
+  background-color: #F3EFE0;
+
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* Header section */
+header {
+  width: inherit;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  border-bottom: 2px solid #26596A;
+  background-color: #D1E0E5;
+  color: black; /*TK*/
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  height: 2rem;
+  display: flex;
+}
+
+#colmar {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#school {
+  text-transform: uppercase;
+  color: gray;  /*TK*/
+}
+
+.desktop {
+  display: block;
+}
+
+.desktop a {
+  margin-left: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+  /* Learn Something */
+  .container {
+    display: flex;
+    padding: 32px 24px;
+    background-color: #6C929F;
+  }
+
+  .image {
+    width: 60%;
+    height: auto;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .jumbotron {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    margin-left: 24px;
+  }
+
+  .jumbotron h1 {
+    font-family: 'Patua One', cursive;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+
+  .jumbotron p {
+    font-size: 2rem;
+    line-height: 1.8rem;
+    margin: 32px 0 24px 0;
+  }
+
+  .jumbotron a {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0px;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #26596A;
+    color: #F3EFE0;
+  }
+
+  .jumbotron a:hover {
+    background-color: #F3EFE0;
+    color: #26596A;
+  }
+
+  /* Practice section */
+
+
+
+  @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      header {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        width: 100%;
+        background-color: #F3EFE0;
+        }
+
+      .desktop {
+        display: none;
+        }
+
+      .logo {
+        display: none;
+      }
+
+      .mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        }
+
+      .container {
+        z-index: 15;
+        position: relative;
+        top: 64px;
+        flex-wrap: wrap;
+        padding: 0;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+
+      .jumbotron {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        margin: 32px 16px;
+        width: 100%;
+      }
+      }
