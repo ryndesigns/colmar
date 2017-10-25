@@ -3,15 +3,21 @@ html {
   font-size: 16px;
   font-family: font-family: 'Roboto', Arial, sans-serif;
   background-color: #F3EFE0;
-
 }
 
 body {
   margin: 0 auto;
 }
 
+h1 {
+  font-family: 'Patua One', cursive;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 3.2rem;
+}
+
 /* Header section */
-header {
+ header {
   width: inherit;
   height: 64px;
   display: flex;
@@ -27,17 +33,17 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;
-}
+  }
 
 .logo img {
   height: 2rem;
   display: flex;
-}
+  }
 
 #colmar {
   text-transform: uppercase;
   font-weight: bold;
-}
+ }
 
 #school {
   text-transform: uppercase;
@@ -57,60 +63,153 @@ header {
 }
 
   /* Learn Something */
-  .container {
-    display: flex;
-    padding: 32px 24px;
-    background-color: #6C929F;
-  }
+.container {
+  display: flex;
+  padding: 32px 24px;
+  background-color: #6C929F;
+}
 
-  .image {
-    width: 60%;
-    height: auto;
-  }
+.image {
+  width: 60%;
+  height: auto;
+}
 
-  .image img {
-    width: 100%;
-    height: auto;
-  }
+.image img {
+  width: 100%;
+  height: auto;
+}
 
-  .jumbotron {
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-    margin-left: 24px;
-  }
+.jumbotron {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  margin-left: 24px;
+}
 
-  .jumbotron h1 {
+/*.jumbotron h1 {
     font-family: 'Patua One', cursive;
     font-weight: bold;
     font-size: 3.5rem;
     line-height: 3.2rem;
-  }
+  }*/
 
-  .jumbotron p {
+.jumbotron p {
     font-size: 2rem;
     line-height: 1.8rem;
     margin: 32px 0 24px 0;
+}
+
+.jumbotron a {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0px;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #26596A;
+  color: #F3EFE0;
   }
 
-  .jumbotron a {
-    display: flex;
-    justify-content: center;
-    padding: 8px 0px;
-    font-weight: 700;
-    font-size: 1rem;
-    background-color: #26596A;
-    color: #F3EFE0;
-  }
-
-  .jumbotron a:hover {
-    background-color: #F3EFE0;
-    color: #26596A;
-  }
+.jumbotron a:hover {
+  background-color: #F3EFE0;
+  color: #26596A;
+}
 
   /* Practice section */
+.practicecontainer {
+  display: flex;
+}
 
+.practice-testimony {
+  padding: 32px 24px; /*margin?*/
+  border-right: 1px solid grey;
+  width: 60%;
+}
 
+.testimony-image {
+  width: 100%;
+  height: auto;
+}
+
+.testimony-image img {
+  width: 100%;
+  height: auto;
+  margin: 32px 0 24px 0;
+}
+
+.practice-testimony h1 {
+  margin: 32px 0 24px 0;
+}
+
+.practice-testimony p {
+  font-size: 1.2rem;
+}
+
+.practice-testimony .attrib {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin: 32px 0;
+}
+
+.practice-info {
+  font-family: 'Roboto', sans-serif;
+  width: 40%;
+
+  padding-top: 32px;
+}
+
+.infobox {
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.desktop-img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-img img {
+  height: auto;
+  width: 100%;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.textbox {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.practice-info h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+
+.practice-info p {
+  margin: 8px 0;
+}
+
+.practice-info a {
+  text-decoration: underline;
+}
+
+.practice-info a:hover {
+  text-decoration: none;
+  color: ;
+}
+
+#highlight {
+  background-color: #6C929F;
+  color:
+}
 
   @media only screen and (max-width: 768px) {
       /* For mobile phones: */
@@ -158,4 +257,57 @@ header {
         margin: 32px 16px;
         width: 100%;
       }
+
+      .practicecontainer {
+        z-index: 10;
+        position: relative;
+        top: 64px;
+        border-bottom: 1px solid gray;
+        background-color: #9FBCC5;
+      }
+
+      .practice-testimony {
+        display: none;
+      }
+
+      .practice-info {
+        width: 100%;
+      }
+
+      .infobox {
+        flex-flow: wrap column;
+        border: 0;
+        height: auto;
+      }
+
+      .desktop-img {
+        display: none;
+      }
+
+      .mobile-img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+      }
+
+      .mobile-img img {
+        width: 100%;
+      }
+
+      .textbox {
+        margin-left: 16px;
+        margin-bottom: 64px;
+      }
+
+      #highlight {
+        background-color: inherit;
+      }
+
+      .learningcontainer {
+        z-index: 10;
+        position: relative;
+        top: 128px;
+      }
+
+
       }
