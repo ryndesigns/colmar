@@ -1,7 +1,7 @@
 /* Universal Styles */
 html {
   font-size: 16px;
-  font-family: font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #F3EFE0;
 }
 
@@ -121,7 +121,7 @@ h1 {
 
 .practice-testimony {
   padding: 32px 24px; /*margin?*/
-  border-right: 1px solid grey;
+  border-right: 1px solid #D1E0E5;
   width: 60%;
 }
 
@@ -145,21 +145,18 @@ h1 {
 }
 
 .practice-testimony .attrib {
-  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   margin: 32px 0;
 }
 
 .practice-info {
-  font-family: 'Roboto', sans-serif;
   width: 40%;
-
   padding-top: 32px;
 }
 
 .infobox {
   display: flex;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #D1E0E5;
 }
 
 .desktop-img {
@@ -210,15 +207,171 @@ h1 {
   background-color: #6C929F;
   color:
 }
+/*Course section*/
+.learncourse {
+  background-color: #6C929F;
+  padding-bottom: 16px;
+}
+
+.learncourse h1 {
+  padding: 32px 0 16px 0;
+  text-align: center;
+}
+
+.learncourse h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5rem;
+  margin: 16px 0;
+}
+
+.learncourse span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 8px 0;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  margin: 0 72px;
+}
+
+.coursebox {
+  background-color: #D1E0E5;
+  width: 30%;
+  margin: 16px;
+  padding-bottom: 24px;
+}
+
+.coursetxt {
+  padding: 16px 16px;
+}
+
+.course-img {
+  width: 100%;
+  height: auto;
+}
+
+.course-img img {
+  width: 100%;
+  height: auto;
+}
+
+/*Thesis section*/
+.thesis h1 {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.thesis h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+
+.thesis p {
+  margin: 8px 0;
+}
+
+.thesiscontent {
+  width: 100%;
+  display: flex;
+  padding: 32px 24px
+}
+
+.left-thesis {
+  width: 60%;
+  height: auto;
+}
+
+.vidbox {
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+}
+
+video {
+  height: auto;
+  width: 100%;
+}
+
+.left-thesis-txt p {
+  margin-top: 8px;
+}
+
+.left-thesis-txt {
+  margin-top: 24px;
+}
+
+.right-thesis {
+  width: 40%;
+  margin-left: 16px;
+}
+
+.thesis-infobox {
+  display: flex;
+  align-items: center;
+}
+
+.thesis-img {
+  max-width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.thesis-img img {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-textbox {
+  width: 65%;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+}
+
+footer {
+  padding: 0 24px;
+  border-top: 1px solid #D1E0E5;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer span {
+  display: block;;
+  padding: 16px 0;
+}
+
+footer nav a {
+  display: inline-block;
+  margin: 16px 0 0 16px;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
 
   @media only screen and (max-width: 768px) {
       /* For mobile phones: */
+      * {
+        font-family: 'Slabo 27px', serif;
+      }
+
+      h1 {
+        font-family: 'Alfa Slab One', cursive
+        letter-spacing: 2px;
+      }
+
       header {
         position: fixed;
         z-index: 20;
         top: 0;
         width: 100%;
         background-color: #F3EFE0;
+        padding: 0;
         }
 
       .desktop {
@@ -233,7 +386,7 @@ h1 {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-content: center;
+        align-items: center;
         }
 
       .container {
@@ -254,16 +407,25 @@ h1 {
         display: flex;
         flex-flow: wrap column;
         justify-content: center;
-        margin: 32px 16px;
+        padding: 32px 16px;
         width: 100%;
       }
+
+      /* hmmm... where is my p?*/
+      .jumbotron p {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+        width: 100%;
+      }
+
 
       .practicecontainer {
         z-index: 10;
         position: relative;
         top: 64px;
-        border-bottom: 1px solid gray;
-        background-color: #9FBCC5;
+        border-bottom: 1px solid #D1E0E5;
+        background-color: #D1E0E5;
       }
 
       .practice-testimony {
@@ -272,6 +434,7 @@ h1 {
 
       .practice-info {
         width: 100%;
+        margin: 0 16px;
       }
 
       .infobox {
@@ -295,19 +458,87 @@ h1 {
       }
 
       .textbox {
-        margin-left: 16px;
-        margin-bottom: 64px;
+        margin: 32px 0 64px 16px;
+        line-height: 5px;
+      }
+
+      .textbox a {
+        padding-top: 1rem;
       }
 
       #highlight {
         background-color: inherit;
       }
 
-      .learningcontainer {
-        z-index: 10;
+      .learncourse {
+        z-index: 5;
         position: relative;
-        top: 128px;
+        top: 64px;
+        padding-bottom: 32px;
       }
 
+      .courses {
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .coursebox {
+        width: inherit;
+        margin: 8px 16px;
+        padding: 0;
+      }
+
+      .coursetxt span,
+      p {
+        display: none;
+      }
+
+      .course-img {
+        display: none;
+      }
+
+      .coursetxt h2 {
+        font-family: 'Patua One', cursive;
+      }
+
+      .thesis {
+        z-index: 0;
+        position: relative;
+        top: 64px;
+        background-color: #D1E0E5;
+      }
+
+      .left-thesis {
+        width: 100%;
+        height: auto;
+      }
+
+      .thesiscontent {
+        width: 100%;
+        display: flex;
+        padding: 0;
+      }
+
+      .left-thesis-txt {
+        display: none;
+      }
+
+      .right-thesis {
+        display: none;
+      }
+
+      footer {
+        z-index: -5;
+        position: relative;
+        top: 64px;
+        justify-content: flex-start;
+        margin-left: 16px;
+        padding-bottom: 16px;
+      }
+
+      footer nav {
+        display: none;
+      }
 
       }

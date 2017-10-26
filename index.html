@@ -30,6 +30,7 @@
   </header>
 
     <!-- Main Container -->
+<main>
     <!-- Learn Container -->
   <section class="container">
     <div class="image">
@@ -46,12 +47,12 @@
     <!-- Practice Container-->
   <section class="practicecontainer">
     <div class="practice-testimony">
-        <div class="testimony-image">
-          <img src="./resources/images/information-main.jpg" alt="man reading book outside" />
-        </div>
-        <h1>It doesn't hurt to keep practicing</h1>
-        <p>"Aliquam dapibus cursus rhoncus. Vestibulum vehicula ornare nulla non molestie. Aliquam lobortis lectus eget iaculis luctus. Fusce id orci nec leo fermentum dignissim sit amet aliquet tellus."</p>
-        <p class="attrib">Emanuel, Sr. Strategist at Hiring.com</p>
+      <div class="testimony-image">
+        <img src="./resources/images/information-main.jpg" alt="man reading book outside" />
+      </div>
+      <h1>It doesn't hurt to keep practicing</h1>
+      <p>"Aliquam dapibus cursus rhoncus. Vestibulum vehicula ornare nulla non molestie. Aliquam lobortis lectus eget iaculis luctus. Fusce id orci nec leo fermentum dignissim sit amet aliquet tellus."</p>
+      <p class="attrib">Emanuel, Sr. Strategist at Hiring.com</p>
     </div>
       <!-- Campus Infomation -->
     <div class="practice-info">
@@ -69,19 +70,19 @@
         </div>
       </div>
 
-        <div class="infobox">
-          <div class="desktop-img">
-            <img src="./resources/images/information-campus.jpg" alt="lecture hall" />
-          </div>
-          <div class="mobile-img">
-            <img src="./resources/images/information-campus-mobile.jpg" alt="lecture hall" />
-          </div>
-          <div class="textbox">
-            <h2>Our Campus</h2>
-            <p>Find which campus is close by you</p>
-            <a href="#">Read more</a>
-          </div>
+      <div class="infobox">
+        <div class="desktop-img">
+          <img src="./resources/images/information-campus.jpg" alt="lecture hall" />
         </div>
+        <div class="mobile-img">
+          <img src="./resources/images/information-campus-mobile.jpg" alt="lecture hall" />
+        </div>
+        <div class="textbox">
+          <h2>Our Campus</h2>
+          <p>Find which campus is close by you</p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
 
         <div class="infobox" id="highlight">
           <div class="desktop-img">
@@ -101,16 +102,15 @@
   </section>
 
     <!-- Start Learning -->
-    <div class="learningcontainer">
+  <section class="learncourse">
     <h1>Start learning</h1>
 
-    <div class="learningbox">
       <!-- Courses -->
       <div class="courses">
 
         <div class="coursebox">
           <div class="course-img">
-            <img src="./resources/images/course-software.jpg" alt="desk with computers" />
+            <img src="./resources/images/course-software.jpg" alt="" />
           </div>
           <div class="coursetxt">
             <h2>Software engineering</h2>
@@ -121,7 +121,7 @@
 
         <div class="coursebox">
           <div class="course-img">
-            <img src="./resources/images/course-computer-art.jpg" alt="smartphone app screen" />
+            <img src="./resources/images/course-computer-art.jpg" alt="" />
           </div>
           <div class="coursetxt">
             <h2>Computer art</h2>
@@ -132,7 +132,7 @@
 
         <div class="coursebox">
           <div class="course-img">
-            <img src="./resources/images/course-design.jpg" alt="student with film camera" />
+            <img src="./resources/images/course-design.jpg" alt="" />
           </div>
           <div class="coursetxt">
             <h2>Design</h2>
@@ -143,7 +143,7 @@
 
         <div class="coursebox">
           <div class="course-img">
-            <img src="./resources/images/course-data.jpg" alt="latptop computer on table" />
+            <img src="./resources/images/course-data.jpg" alt="" />
           </div>
           <div class="coursetxt">
             <h2>Data</h2>
@@ -154,7 +154,7 @@
 
         <div class="coursebox">
           <div class="course-img">
-            <img src="./resources/images/course-business.jpg" alt="chess board" />
+            <img src="./resources/images/course-business.jpg" alt="" />
           </div>
           <div class="coursetxt">
             <h2>Business</h2>
@@ -165,7 +165,7 @@
 
         <div class="coursebox">
           <div class="course-img">
-            <img src="./resources/images/course-marketing.jpg" alt="person using Apple watch" />
+            <img src="./resources/images/course-marketing.jpg" alt="" />
           </div>
           <div class="coursetxt">
             <h2>Marketing</h2>
@@ -175,47 +175,53 @@
         </div>
 
       </div>
-    </div>
-  </div>
+</section>
 
     <!-- Thesis Exhibit -->
-    <div class="learningcontainer thesis">
-    <h1>Thesis exhibit</h1>
-    <div class="practicecontent thesis">
-      <div class="left thesis">
-        <div class="video">
-          <video width="100%" height="auto" controls> <source src="./resources/videos/thesis.mp4" type="video/mp4">This browser does not support this video.</video>
-        </div>
-        <h1>Reimagine urban</h1>
+
+<section class="thesis">
+  <h1>Thesis exhibit</h1>
+
+  <div class="thesiscontent">
+
+    <div class="left-thesis">
+      <div class="vidbox">
+        <video src="./resources/videos/thesis.mp4" width="100%" height="auto" controls>This browser does not support this video.</video>
+      </div>
+      <div class="left-thesis-txt">
+        <h2>Reimagine urban</h2>
         <p>"Mauris aliquam posuere justo, ac pellentesque eros facilisis quis. Etiam id mauris ut tortor fringilla hendrerit. Integer sagittis facilisis odio, sed tristique mi. Curabitur scelerisque ornare dapibus. Sed luctus, elit nec aliquet mattis, ipsum est blandit massa, at tempor libero ex a lorem."</p>
       </div>
+    </div>
 
       <!-- Exhibit Detail -->
-      <div class="right exhibit">
+      <div class="right-thesis">
 
-        <div class="infobox exhibit" id="highlight">
-          <div class="desktop-img">
+        <div class="thesis-infobox" id="highlight">
+          <div class="thesis-img">
             <img src="./resources/images/thesis-fisma.jpg" alt="wireframes and iPhone" />
           </div>
-          <div class="textbox">
+          <div class="thesis-textbox">
             <h2>Fisma: Design and Prototype</h2>
-            <span>Designer showcase of new prototype product</span>
+            <p>Designer showcase of new prototype product</p>
           </div>
         </div>
 
-        <div class="infobox exhibit">
-          <div class="desktop-img">
+        <div class="thesis-infobox">
+          <div class="thesis-img">
             <img src="./resources/images/thesis-now-and-then.jpg" alt="skyline" />
           </div>
-          <div class="textbox">
+          <div class="thesis-textbox">
             <h2>Now and then</h2>
-            <span>Research study about New York</span>
+            <p>Research study about New York</p>
           </div>
         </div>
 
       </div>
+
     </div>
-  </div>
+
+</section>
 
     <!-- Footer -->
     <footer>
@@ -225,6 +231,7 @@
       <a href="#">Privacy</a>
     </nav>
   </footer>
+</main>
 
   <!-- Fin -->
 
