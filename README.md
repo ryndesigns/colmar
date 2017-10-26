@@ -1,4 +1,4 @@
-# colmar
+# Colmar Academy
 This is the capstone project for Create Websites from Scratch, an HTML/CSS certification from Codecademy.
 
 After submitting, I discovered my code is only responsive on the web browser.
